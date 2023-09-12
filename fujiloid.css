@@ -28,6 +28,12 @@ nav {
     padding: 12px 79px;
 }
 
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .text-box {
     width: 60%;
     position: absolute;
@@ -41,16 +47,44 @@ nav {
 }
 
 .text-box p {
+    margin: 10px 0 40px;
     font-size: 16px;
 }
 
-
 .about {
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
 }
 
 p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
     padding: 30px;
+}
+
+.row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col {
+    flex-basis: 30%;
+    background: #ffeac4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
 
 .product{
