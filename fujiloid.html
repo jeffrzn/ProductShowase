@@ -3,15 +3,20 @@
 
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fujiloid.css">
     <title>Fujiloid</title>
+    <link rel="stylesheet" href="fujiloid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <section class="header">
         <nav>
+            <a class="samp" href="home.html"><img src="img/pola.png" alt="logo"></a>
             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="#aboutjump">ABOUT</a></li>
@@ -20,6 +25,7 @@
                     <li><a href="#contactjump">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>Fujiloid</h1>
@@ -27,16 +33,18 @@
                 reflex camera. It features a stylish design, instant printing mechanism, high-resolution sensor, manual
                 controls, and connectivity options. This hybrid device offers both the nostalgic joy of physical instant
                 prints and the creative possibilities of digital photography.</p>
-            <a href="">Visit Us to Know More</a>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
         </div>
+
     </section>
 
+    <!-- About -->
     <section class="about" id="aboutjump">
-        <h1 ">About Fujiloid</h1>
+        <h1>About Fujiloid</h1>
         <p>A Polaroid DSLR camera combines the classic instant photo experience of Polaroid with the advanced features
             of a digital single-lens reflex (DSLR) camera. This hybrid device merges the nostalgic charm of instant film
             with the versatility and control that comes with digital photography.</p>
-        <div class=" row">
+        <div class="row">
             <div class="about-col">
                 <h3>Exterior and Design</h3>
                 <p>The Polaroid DSLR camera features a durable yet stylish body design that incorporates a blend of
@@ -55,7 +63,7 @@
                     features a large image sensor, high-resolution capabilities (possibly in the range of 20 to 30
                     megapixels), and a selection of interchangeable lenses to cater to various photography styles.</p>
             </div>
-            </div>
+        </div>
     </section>
 
     <section class="product" id="productjump">
@@ -95,26 +103,50 @@
             hic quo soluta, fuga earum omnis eveniet sit dolorum. Nihil et minus laudantium iure accusamus.</p>
         <div class="row">
             <div class="reviews-col">
+                <img src="img/placeholder.jpg">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ullam molestias
                         laudantium ducimus animi consequatur quaerat earum officia eaque tempore natus minus veritatis
                         voluptatibus explicabo praesentium repellendus, eligendi dolor?</p>
                     <h3>Lewis Hamilton</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                 </div>
             </div>
             <div class="reviews-col">
+                <img src="img/placeholder.jpg">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ullam molestias
                         laudantium ducimus animi consequatur quaerat earum officia eaque tempore natus minus veritatis
                         voluptatibus explicabo praesentium repellendus, eligendi dolor?</p>
                     <h3>Charles Leclerc</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="contact" id="contactjump">
         <h1>Interested in Fujiloid?</h1>
-        <a href="">CONTACT US</a>
+        <a href="" class="hero-btn">CONTACT US</a>
     </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
 </body>
 </html>
